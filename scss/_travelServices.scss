@@ -30,6 +30,10 @@
                 color: #000;
             }
 
+            i:hover {
+                color: #fff;
+            }
+
             p {
                 padding: 15px 0;
             }
@@ -66,10 +70,6 @@
 
                 &:last-child {
                     border-left: $borer-separator;
-                }
-
-                i:hover {
-                    color: #fff;
                 }
 
                 p {

@@ -539,6 +539,9 @@ nav .nav-item a:hover {
 .travel-services .container > div a:visited {
   color: #000;
 }
+.travel-services .container > div i:hover {
+  color: #fff;
+}
 .travel-services .container > div p {
   padding: 15px 0;
 }
@@ -576,9 +579,6 @@ nav .nav-item a:hover {
   }
   .travel-services .container > div:last-child {
     border-left: 3px solid #000;
-  }
-  .travel-services .container > div i:hover {
-    color: #fff;
   }
   .travel-services .container > div p {
     padding: 15px 0;
@@ -623,6 +623,53 @@ nav .nav-item a:hover {
 }
 .questions form .form-group #submit:hover {
   background-color: #35823d;
+}
+
+footer {
+  padding: 15px 3%;
+  background-color: #222831;
+  color: grey;
+  text-align: center;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+footer a:visited {
+  color: grey;
+}
+footer a:hover {
+  color: #a8a8a8;
+}
+footer .contact-info li {
+  margin: 10px 0;
+}
+footer .social-media {
+  margin: 25px 0;
+}
+footer .social-media ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .copyright {
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-main-content .contact-info {
+    text-align: left;
+  }
+  footer .footer-main-content .social-media {
+    width: 30%;
+  }
+  footer .copyright {
+    margin: 20px 0 0 0;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
