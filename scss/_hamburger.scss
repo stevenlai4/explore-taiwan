@@ -1,0 +1,19 @@
+.toggle {
+    padding: 0;
+    text-align: left;
+
+    .fas {
+        color: #fff;
+        padding: 15px;
+    }
+}
+
+.active .nav-item {
+    display: block;
+}
+
+@media screen and (min-width: $desktop-size) {
+    .toggle {
+        display: none;
+    }
+}

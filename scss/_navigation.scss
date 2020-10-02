@@ -1,0 +1,45 @@
+nav {
+    background-color: $header-footer-bg-color;
+
+    .menu {
+        @include with-toggle;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+
+        a {
+            @include nav-layout;
+            &:hover {
+                color: $header-footer-bg-color;
+                background: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-size) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .brand {
+            @include nav-layout;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .menu {
+            @include without-toggle;
+
+            .nav-item {
+                display: block;
+            }
+        }
+    }
+}

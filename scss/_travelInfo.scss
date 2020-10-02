@@ -1,0 +1,91 @@
+.travel-info {
+    $grid-rows: 1;
+    $grid-cols: repeat(1, 1fr);
+    $grid-max-cols-per-row: 1;
+    $grid-row-gap: 0;
+    $grid-col-gap: 20px;
+
+    padding: 0 3%;
+    background-color: $travelInfo-bg-color;
+    color: #fff;
+
+    h2 {
+        @include section-title;
+    }
+
+    .container {
+        @include grid-creator(
+            $grid-rows,
+            $grid-cols,
+            $grid-max-cols-per-row,
+            $grid-row-gap,
+            $grid-col-gap
+        );
+
+        .col-2,
+        .col-3 {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: width;
+        }
+
+        p {
+            padding-top: 20px;
+            text-align: justify;
+        }
+    }
+
+    padding-bottom: $section-padding-bottom;
+}
+
+@media screen and (min-width: $tablet-size) {
+    .travel-info {
+        $grid-rows: 1;
+        $grid-cols: repeat(2, 1fr);
+        $grid-max-cols-per-row: 2;
+        $grid-row-gap: 0;
+        $grid-col-gap: 20px;
+
+        .container {
+            @include grid-creator(
+                $grid-rows,
+                $grid-cols,
+                $grid-max-cols-per-row,
+                $grid-row-gap,
+                $grid-col-gap
+            );
+
+            .col-2 {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-size) {
+    .travel-info {
+        $grid-rows: 1;
+        $grid-cols: repeat(3, 1fr);
+        $grid-max-cols-per-row: 3;
+        $grid-row-gap: 0;
+        $grid-col-gap: 20px;
+
+        .container {
+            @include grid-creator(
+                $grid-rows,
+                $grid-cols,
+                $grid-max-cols-per-row,
+                $grid-row-gap,
+                $grid-col-gap
+            );
+
+            .col-2,
+            .col-3 {
+                display: block;
+            }
+        }
+    }
+}

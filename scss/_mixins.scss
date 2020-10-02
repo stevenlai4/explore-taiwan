@@ -1,0 +1,62 @@
+// Section Title
+@mixin section-title {
+    font-size: 6vh;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+// Center Stuff
+@mixin vh-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+// Grid-creator
+@mixin grid-creator($rows, $cols, $max-col-each-row, $row-gap, $col-gap) {
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $cols;
+    grid-row-gap: $row-gap;
+    grid-column-gap: $col-gap;
+
+    @for $i from 1 through $rows {
+        @for $j from 1 through $max-col-each-row {
+            @if $i > 1 {
+                .col-#{$j + $max-col-each-row} {
+                    grid-row: $i / #{$i + 1};
+                    grid-column: $j/ #{$j + 1};
+                }
+            } @else {
+                .col-#{$j} {
+                    grid-row: $i / #{$i + 1};
+                    grid-column: $j/ #{$j + 1};
+                }
+            }
+        }
+    }
+}
+
+// Navigation
+@mixin with-toggle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@mixin without-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+}
+
+@mixin nav-layout {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+}

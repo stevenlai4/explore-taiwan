@@ -1,0 +1,85 @@
+.travel-services {
+    $grid-rows: 2;
+    $grid-cols: repeat(2, 1fr);
+    $grid-max-cols-per-row: 2;
+    $grid-row-gap: 0px;
+    $grid-col-gap: 0px;
+
+    padding: 0 3%;
+    background-color: $travel-services-ng-color;
+    color: #000;
+
+    h2 {
+        @include section-title;
+    }
+
+    .container {
+        @include grid-creator(
+            $grid-rows,
+            $grid-cols,
+            $grid-max-cols-per-row,
+            $grid-row-gap,
+            $grid-col-gap
+        );
+
+        > div {
+            text-align: center;
+            padding: 20px;
+
+            a:visited {
+                color: #000;
+            }
+
+            p {
+                padding: 15px 0;
+            }
+        }
+    }
+
+    padding-bottom: $section-padding-bottom;
+}
+
+@media screen and (min-width: $tablet-size) {
+    .travel-services {
+        $grid-rows: 1;
+        $grid-cols: repeat(4, 1fr);
+        $grid-max-cols-per-row: 4;
+        $grid-row-gap: 0px;
+        $grid-col-gap: 0px;
+
+        .container {
+            @include grid-creator(
+                $grid-rows,
+                $grid-cols,
+                $grid-max-cols-per-row,
+                $grid-row-gap,
+                $grid-col-gap
+            );
+
+            > div {
+                text-align: center;
+                padding: 0 20px;
+
+                &:first-child {
+                    border-right: $borer-separator;
+                }
+
+                &:last-child {
+                    border-left: $borer-separator;
+                }
+
+                i:hover {
+                    color: #fff;
+                }
+
+                p {
+                    padding: 15px 0;
+                }
+            }
+
+            .col-2 {
+                border-right: $borer-separator;
+            }
+        }
+    }
+}

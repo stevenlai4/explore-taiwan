@@ -1,0 +1,42 @@
+.questions {
+    padding: 0 3%;
+    background-color: $travelInfo-bg-color;
+    color: #fff;
+
+    h2 {
+        @include section-title;
+    }
+
+    form {
+        width: 85%;
+        margin: 0 auto;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin: 12px 0px;
+            }
+
+            input {
+                padding: 6px;
+            }
+
+            #submit {
+                font-size: 20px;
+                width: 100px;
+                padding: 10px;
+                margin-top: 20px;
+                color: #fff;
+                background-color: #4caf50;
+
+                &:hover {
+                    background-color: #35823d;
+                }
+            }
+        }
+    }
+
+    padding-bottom: $section-padding-bottom;
+}
