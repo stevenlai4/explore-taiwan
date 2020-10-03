@@ -1,3 +1,29 @@
+@media screen and (min-width: 768px) {
+  .banner .banner-text p {
+    width: 60%;
+    margin: 40px auto;
+  }
+}
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,15 +227,15 @@ nav .nav-item a:hover {
     display: block;
   }
 }
-.banner {
+.home-banner {
   height: 65vh;
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner-home.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
-.banner .banner-text {
+.home-banner .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -217,21 +243,88 @@ nav .nav-item a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.banner .banner-text h1 {
+.home-banner .banner-text h1 {
   color: #fff;
   font-size: 10vh;
   text-transform: uppercase;
 }
-.banner .banner-text p {
+.home-banner .banner-text p {
   color: #fff;
   width: 90%;
   margin: 20px auto;
 }
 
+.attractions-banner {
+  height: 65vh;
+  background-image: url("../images/banner-attractions.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.attractions-banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.attractions-banner .banner-text h1 {
+  color: #000;
+  font-size: 8vh;
+  text-transform: uppercase;
+}
+.attractions-banner .banner-text p {
+  color: #000;
+  width: 90%;
+  margin: 20px auto;
+}
+
+footer {
+  padding: 15px 3%;
+  background-color: #222831;
+  color: grey;
+  text-align: center;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+footer a:visited {
+  color: grey;
+}
+footer a:hover {
+  color: #a8a8a8;
+}
+footer .contact-info li {
+  margin: 10px 0;
+}
+footer .social-media {
+  margin: 25px 0;
+}
+footer .social-media ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .copyright {
+  margin: 5px 0;
+}
+
 @media screen and (min-width: 768px) {
-  .banner .banner-text p {
-    width: 60%;
-    margin: 40px auto;
+  footer .footer-main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-main-content .contact-info {
+    text-align: left;
+  }
+  footer .footer-main-content .social-media {
+    width: 30%;
+  }
+  footer .copyright {
+    margin: 20px 0 0 0;
+    text-align: left;
   }
 }
 .travel-info {
@@ -625,50 +718,49 @@ nav .nav-item a:hover {
   background-color: #35823d;
 }
 
-footer {
-  padding: 15px 3%;
-  background-color: #222831;
-  color: grey;
+main[class=attractions] {
+  padding: 0 5%;
+  margin: 0 auto;
+  background-color: #393e46;
+  color: white;
+}
+main[class=attractions] .attraction-item {
+  padding: 40px 0;
+}
+main[class=attractions] .attraction-item h2 {
+  font-size: 6vh;
   text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
 }
-footer a {
-  color: grey;
-  text-decoration: none;
+main[class=attractions] .attraction-item img {
+  width: 100%;
 }
-footer a:visited {
-  color: grey;
-}
-footer a:hover {
-  color: #a8a8a8;
-}
-footer .contact-info li {
-  margin: 10px 0;
-}
-footer .social-media {
-  margin: 25px 0;
-}
-footer .social-media ul {
-  display: flex;
-  justify-content: space-around;
-}
-footer .copyright {
-  margin: 5px 0;
+main[class=attractions] .attraction-item .item-text p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
-@media screen and (min-width: 768px) {
-  footer .footer-main-content {
+@media screen and (min-width: 1025px) {
+  main[class=attractions] .attraction-item {
     display: flex;
-    justify-content: space-between;
+    padding: 40px 0;
   }
-  footer .footer-main-content .contact-info {
-    text-align: left;
+  main[class=attractions] .attraction-item .img-right {
+    order: 2;
   }
-  footer .footer-main-content .social-media {
-    width: 30%;
+  main[class=attractions] .attraction-item img {
+    width: 450px;
   }
-  footer .copyright {
-    margin: 20px 0 0 0;
-    text-align: left;
+  main[class=attractions] .attraction-item .item-text p {
+    font-size: 16px;
+  }
+  main[class=attractions] .text-left {
+    padding-right: 20px;
+  }
+  main[class=attractions] .text-right {
+    padding-left: 30px;
   }
 }
 

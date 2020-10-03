@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%);
 }
 
-// Grid-creator
+// Grid Creator
 @mixin grid-creator($rows, $cols, $max-col-each-row, $row-gap, $col-gap) {
     display: grid;
     grid-template-rows: $rows;
@@ -35,6 +35,51 @@
                     grid-row: $i / #{$i + 1};
                     grid-column: $j/ #{$j + 1};
                 }
+            }
+        }
+    }
+}
+
+// Banners Creator
+@mixin banner-creator(
+    $banner-page,
+    $title-text-size,
+    $banner-text-color,
+    $banner-url
+) {
+    .#{$banner-page}-banner {
+        height: 65vh;
+        background-image: url($banner-url);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .banner-text {
+            @include vh-center;
+            text-align: center;
+
+            h1 {
+                color: $banner-text-color;
+                font-size: $title-text-size;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $banner-text-color;
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-size) {
+    .banner {
+        .banner-text {
+            p {
+                width: 60%;
+                margin: 40px auto;
             }
         }
     }

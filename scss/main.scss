@@ -1,11 +1,18 @@
+// Global styles
 @import 'variables';
 @import 'mixins';
+@import 'animation';
 @import 'reset';
 @import 'hamburger';
 @import 'navigation';
 @import 'banner';
-@import 'travelInfo';
-@import 'attractions';
-@import 'travelServices';
-@import 'questions';
 @import 'footer';
+
+// index.html styles
+@import './index/travelInfo';
+@import './index/attractions';
+@import './index/travelServices';
+@import './index/questions';
+
+// attractions.html styles
+@import './attractions/attractions';
