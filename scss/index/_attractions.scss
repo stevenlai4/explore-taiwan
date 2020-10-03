@@ -81,6 +81,12 @@
         $grid-row-gap: 50px;
         $grid-col-gap: 20px;
 
+        %back-background-img-layout {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         .container {
             @include grid-creator(
                 $grid-rows,
@@ -129,13 +135,66 @@
                         box-sizing: border-box;
                         padding: 10px;
                         color: #fff;
-                        background-color: rgba(0, 0, 0, 0.55);
 
                         p {
+                            @include vh-center;
                             text-transform: uppercase;
                             font-size: 25px;
-                            @include vh-center;
+                            width: 100%;
+                            font-weight: 600;
                         }
+                    }
+
+                    .back-taipei-101 {
+                        background-image: url('../../images/attraction-back1.jpg');
+                        @extend %back-background-img-layout;
+                    }
+
+                    .back-shilin-nightmarket {
+                        background-image: url('../../images/attraction-back2.jpg');
+                        @extend %back-background-img-layout;
+
+                        p {
+                            background-color: rgba(0, 0, 0, 0.3);
+                        }
+                    }
+
+                    .back-jiufen {
+                        background-image: url('../../images/attraction-back3.jpg');
+                        @extend %back-background-img-layout;
+
+                        p {
+                            background-color: rgba(0, 0, 0, 0.3);
+                        }
+                    }
+
+                    .back-kenting {
+                        background-image: url('../../images/attraction-back4.jpg');
+                        @extend %back-background-img-layout;
+                    }
+
+                    .back-puli {
+                        background-image: url('../../images/attraction-back5.jpg');
+                        @extend %back-background-img-layout;
+                    }
+
+                    .back-xinbeitou {
+                        background-image: url('../../images/attraction-back6.jpg');
+                        @extend %back-background-img-layout;
+                    }
+
+                    .back-nantou {
+                        background-image: url('../../images/attraction-back7.jpg');
+                        @extend %back-background-img-layout;
+
+                        p {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                    }
+
+                    .back-yehliu {
+                        background-image: url('../../images/attraction-back8.jpg');
+                        @extend %back-background-img-layout;
                     }
                 }
             }
