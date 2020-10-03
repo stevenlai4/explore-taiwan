@@ -10,7 +10,7 @@
     color: #000;
 
     h2 {
-        @include section-title;
+        @extend %section-title;
     }
 
     .container {

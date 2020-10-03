@@ -4,7 +4,7 @@
     color: #fff;
 
     h2 {
-        @include section-title;
+        @extend %section-title;
     }
 
     form {

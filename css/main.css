@@ -1,3 +1,10 @@
+main[class=attractions] .attraction-item h2, .questions h2, .travel-services h2, .attractions h2, .travel-info h2 {
+  font-size: 6vh;
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .banner .banner-text p {
     width: 60%;
@@ -272,7 +279,7 @@ nav .nav-item a:hover {
 }
 .attractions-banner .banner-text h1 {
   color: #000;
-  font-size: 8vh;
+  font-size: 7vh;
   text-transform: uppercase;
 }
 .attractions-banner .banner-text p {
@@ -332,12 +339,6 @@ footer .copyright {
   background-color: #393e46;
   color: #fff;
   padding-bottom: 50px;
-}
-.travel-info h2 {
-  font-size: 6vh;
-  text-align: center;
-  padding: 50px 0;
-  text-transform: uppercase;
 }
 .travel-info .container {
   display: grid;
@@ -413,12 +414,6 @@ footer .copyright {
   background-color: #eeeeee;
   color: #000;
   padding-bottom: 50px;
-}
-.attractions h2 {
-  font-size: 6vh;
-  text-align: center;
-  padding: 50px 0;
-  text-transform: uppercase;
 }
 .attractions .container {
   display: grid;
@@ -596,12 +591,6 @@ footer .copyright {
   color: #000;
   padding-bottom: 50px;
 }
-.travel-services h2 {
-  font-size: 6vh;
-  text-align: center;
-  padding: 50px 0;
-  text-transform: uppercase;
-}
 .travel-services .container {
   display: grid;
   grid-template-rows: 2;
@@ -686,12 +675,6 @@ footer .copyright {
   color: #fff;
   padding-bottom: 50px;
 }
-.questions h2 {
-  font-size: 6vh;
-  text-align: center;
-  padding: 50px 0;
-  text-transform: uppercase;
-}
 .questions form {
   width: 85%;
   margin: 0 auto;
@@ -727,19 +710,13 @@ main[class=attractions] {
 main[class=attractions] .attraction-item {
   padding: 40px 0;
 }
-main[class=attractions] .attraction-item h2 {
-  font-size: 6vh;
-  text-align: center;
-  padding: 50px 0;
-  text-transform: uppercase;
-}
 main[class=attractions] .attraction-item img {
   width: 100%;
 }
 main[class=attractions] .attraction-item .item-text p {
   text-align: justify;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 1025px) {
