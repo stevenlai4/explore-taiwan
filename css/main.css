@@ -657,6 +657,9 @@ footer .copyright {
   text-align: center;
   padding: 20px;
 }
+.travel-services .container > div a {
+  color: #000;
+}
 .travel-services .container > div a:visited {
   color: #000;
 }
