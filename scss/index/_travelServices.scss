@@ -42,6 +42,26 @@
                 padding: 15px 0;
             }
         }
+
+        .transportation {
+            border-bottom: $border-separator;
+            margin: 0 10px;
+        }
+
+        .map {
+            border-left: $border-separator;
+            margin: 10px 0;
+        }
+
+        .flight {
+            border-right: $border-separator;
+            margin: 10px 0;
+        }
+
+        .hotel {
+            border-top: $border-separator;
+            margin: 0 10px;
+        }
     }
 
     padding-bottom: $section-padding-bottom;
@@ -68,12 +88,8 @@
                 text-align: center;
                 padding: 0 20px;
 
-                &:first-child {
-                    border-right: $borer-separator;
-                }
-
-                &:last-child {
-                    border-left: $borer-separator;
+                &:not(:last-child) {
+                    border-right: $border-separator;
                 }
 
                 p {
@@ -81,9 +97,17 @@
                 }
             }
 
-            .col-2 {
-                border-right: $borer-separator;
+            .transportation,
+            .map,
+            .flight,
+            .hotel {
+                margin: 0;
+                border: none;
             }
+
+            // .col-2 {
+            //     border-right: $border-separator;
+            // }
         }
     }
 }

@@ -669,6 +669,22 @@ footer .copyright {
 .travel-services .container > div p {
   padding: 15px 0;
 }
+.travel-services .container .transportation {
+  border-bottom: 3px solid #000;
+  margin: 0 10px;
+}
+.travel-services .container .map {
+  border-left: 3px solid #000;
+  margin: 10px 0;
+}
+.travel-services .container .flight {
+  border-right: 3px solid #000;
+  margin: 10px 0;
+}
+.travel-services .container .hotel {
+  border-top: 3px solid #000;
+  margin: 0 10px;
+}
 
 @media screen and (min-width: 768px) {
   .travel-services .container {
@@ -698,17 +714,18 @@ footer .copyright {
     text-align: center;
     padding: 0 20px;
   }
-  .travel-services .container > div:first-child {
+  .travel-services .container > div:not(:last-child) {
     border-right: 3px solid #000;
-  }
-  .travel-services .container > div:last-child {
-    border-left: 3px solid #000;
   }
   .travel-services .container > div p {
     padding: 15px 0;
   }
-  .travel-services .container .col-2 {
-    border-right: 3px solid #000;
+  .travel-services .container .transportation,
+.travel-services .container .map,
+.travel-services .container .flight,
+.travel-services .container .hotel {
+    margin: 0;
+    border: none;
   }
 }
 .questions {
