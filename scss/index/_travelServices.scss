@@ -45,22 +45,22 @@
 
         .transportation {
             border-bottom: $border-separator;
-            margin: 0 10px;
+            margin-right: 10px;
         }
 
         .map {
             border-left: $border-separator;
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
 
         .flight {
             border-right: $border-separator;
-            margin: 10px 0;
+            margin-top: 10px;
         }
 
         .hotel {
             border-top: $border-separator;
-            margin: 0 10px;
+            margin-left: 10px;
         }
     }
 

@@ -679,19 +679,19 @@ footer .copyright {
 }
 .travel-services .container .transportation {
   border-bottom: 3px solid #000;
-  margin: 0 10px;
+  margin-right: 10px;
 }
 .travel-services .container .map {
   border-left: 3px solid #000;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 .travel-services .container .flight {
   border-right: 3px solid #000;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 .travel-services .container .hotel {
   border-top: 3px solid #000;
-  margin: 0 10px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
