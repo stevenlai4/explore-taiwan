@@ -193,7 +193,18 @@ nav .menu {
   text-align: center;
 }
 nav .brand {
-  display: none;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translate(-50%);
+  z-index: 1;
 }
 nav .nav-item {
   display: none;
@@ -217,13 +228,10 @@ nav .nav-item a:hover {
     justify-content: space-between;
   }
   nav .brand {
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 900;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translate(0);
+    left: 0;
   }
   nav .menu {
     display: flex;
