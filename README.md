@@ -1,4 +1,6 @@
-# lab-5-introduction-to-sass-stevenlai4
-lab-5-introduction-to-sass-stevenlai4 created by GitHub Classroom
+#Explore Taiwan
 
-https://exploretaiwan.netlify.app/
+Only two pages available:
+
+1. Home
+2. Attractions
